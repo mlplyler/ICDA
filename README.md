@@ -1,5 +1,6 @@
 # Iterative Counterfactual Data Augmentation
-https://arxiv.org/abs/2502.18249 
+https://arxiv.org/abs/2502.18249 \
+Plyler, M., & Chi, M. (2025). Iterative Counterfactual Data Augmentation. Proceedings of the AAAI Conference on Artificial Intelligence, 39(19), 19931-19938. https://doi.org/10.1609/aaai.v39i19.34195
 
 # Environment
 the environment file is in utils/env.txt \
