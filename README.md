@@ -1,3 +1,6 @@
+# Iterative Counterfactual Data Augmentation
+https://arxiv.org/abs/2502.18249 
+
 # Environment
 the environment file is in utils/env.txt \
 we used rtx2060super gpus for the configs in g2r, g3r, and comp \
