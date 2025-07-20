@@ -91,7 +91,10 @@ class myModel(tf.keras.Model):
   def apply_ratmask(self,x,z):
     z = tf.expand_dims(z,axis=-1)
     print('apply_mask', np.shape(x),np.shape(z))
-    x = x*z + (1-z)*(-1e-10)    
+    ## -1e-10 is technically a bug, it should be -1e10
+    ## it works better as -1e-10, not sure why
+    ## -1e-10 is whats used in the paper
+    x = x*z + (1-z)*(-1e-10)     
     x = tf.reduce_max(x,axis=1) 
     return(x)
   def z_logit_avg(self,zlogit,pred_logit):
